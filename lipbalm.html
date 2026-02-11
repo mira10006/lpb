@@ -1,0 +1,400 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>手作護唇膏與每日恩典</title>
+    
+    <style>
+        /* 原有的護唇膏樣式 */
+        body {
+            font-family: "PingFang TC", "Microsoft JhengHei", sans-serif;
+            background-color: #fdfaf5;
+            color: #5a5a5a;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            line-height: 1.8;
+        }
+
+        header {
+            background-image: url('image/image02.jpeg'); 
+            background-size: cover;
+            background-position: center;
+            color: white;
+            width: 100%;
+            text-align: center;
+            padding: 70px 0;
+            margin-bottom: 20px;
+            text-shadow: 2px 2px 8px rgba(0,0,0,0.6);
+        }
+
+        .container {
+            width: 92%;
+            max-width: 500px;
+            background: white;
+            padding: 30px 25px;
+            border-radius: 25px;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.05);
+            text-align: left;
+            margin-bottom: 50px;
+        }
+
+        .product-image {
+            width: 100%;
+            margin-bottom: 25px;
+            border-radius: 15px;
+            overflow: hidden;
+        }
+
+        .product-image img {
+            width: 100%;
+            height: auto;
+            display: block;
+        }
+
+        h2 {
+            color: #606c38;
+            font-size: 22px;
+            text-align: center;
+            line-height: 1.4;
+            margin-bottom: 20px;
+        }
+
+        h4 {
+            color: #d4a373;
+            border-left: 4px solid #d4a373;
+            padding-left: 10px;
+            margin-top: 25px;
+            margin-bottom: 10px;
+        }
+
+        .ingredient-item {
+            margin-bottom: 15px;
+        }
+
+        .ingredient-title {
+            font-weight: bold;
+            color: #333;
+            display: block;
+        }
+
+        .btn-group {
+            margin-top: 15px;
+            text-align: center;
+        }
+
+        /* 修改按鈕樣式使其通用 */
+        button {
+            background-color: #faedcd;
+            border: 1px solid #d4a373;
+            padding: 10px 18px;
+            margin: 4px;
+            border-radius: 12px;
+            cursor: pointer;
+            font-size: 15px;
+            font-weight: bold;
+            color: #555;
+            transition: all 0.3s;
+        }
+
+        button.active {
+            background-color: #d4a373 !important;
+            color: white !important;
+            border-color: #b08968;
+        }
+
+        #info-box {
+            margin-top: 20px;
+            padding: 20px;
+            border: 1px dashed #d4a373;
+            border-radius: 15px;
+            background-color: #fffcf2;
+            min-height: 80px;
+            text-align: left;
+            font-size: 15px;
+        }
+
+        /* --- 新增：經文抽取區塊的樣式 --- */
+        .scripture-section {
+            margin-top: 40px;
+            padding: 25px;
+            border-top: 2px solid #f0e6d2;
+            text-align: center;
+        }
+
+        .scripture-display {
+            min-height: 100px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            margin: 20px 0;
+            padding: 15px;
+            background-color: #fefefe;
+            border-radius: 15px;
+        }
+
+        .content-text {
+            font-size: 1.1rem;
+            line-height: 1.6;
+            color: #5d544b;
+            font-weight: 500;
+        }
+
+        .reference-text {
+            font-size: 0.9rem;
+            color: #888;
+            font-style: italic;
+            margin-top: 10px;
+        }
+
+        .draw-btn {
+            background-color: #606c38; /* 配合護唇膏的主色調 */
+            color: white;
+            border: none;
+            padding: 15px 40px;
+            font-size: 1.1rem;
+            border-radius: 50px;
+            width: 100%;
+            box-shadow: 0 5px 15px rgba(96, 108, 56, 0.3);
+        }
+
+        .draw-btn:hover {
+            background-color: #4a532b;
+        }
+
+        .placeholder {
+            color: #bbb;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1 style="margin:0; font-size: 28px;">純天然手工精油護唇膏</h1>
+        <p style="margin:10px 0 0; font-size: 18px;">100%天然成分．給你最安心的愛</p>
+    </header>
+
+    <div class="container">
+        <div class="product-image">
+            <img src="image/image01.jpeg">
+        </div>
+
+        <h2>讓雙唇在純淨修護中<br>遇見最深層的療癒</h2>
+        
+        <p>這款護唇膏追求極致的平衡與純淨。我們嚴選高度滋潤的植物油，揉合天然精油，不僅深層鎖水，更在每次塗抹間，帶來身心的放鬆與修復。</p>
+
+        <h4>核心油脂：深層滋潤</h4>
+        
+        <div class="ingredient-item">
+            <span class="ingredient-title">有機甜杏仁油｜深層軟化</span>
+            富含維生素E，能溫柔軟化唇部角質，讓乾燥龜裂的雙唇重拾柔嫩。
+        </div>
+
+        <div class="ingredient-item">
+            <span class="ingredient-title">頂級初榨橄欖油｜強效保護</span>
+            形成透氣保護膜，有效防止水分流失，是脆弱肌膚的救星。
+        </div>
+
+        <div class="ingredient-item">
+            <span class="ingredient-title">嚴選小農蜂蠟｜天然鎖水</span>
+            天然抗菌特性讓滋養成分更持久，維持雙唇長效水潤。
+        </div>
+
+        <h4>理療級精油：修復饗宴</h4>
+        <p>精油不只帶來香氛，更賦予了修復肌膚與療癒情緒的獨特價值。</p>
+
+        <hr style="border: 0.5px solid #eee; margin: 30px 0;">
+
+        <h3 style="text-align:center;">精油功效查詢</h3>
+        <p style="text-align:center; font-size: 14px;">點擊下方按鈕了解精油特性</p>
+        
+        <div class="btn-group">
+            <button onclick="checkLipBalm('薰衣草')">薰衣草</button>
+            <button onclick="checkLipBalm('天竺葵')">天竺葵</button>
+            <button onclick="checkLipBalm('甜橙')">甜橙</button>
+            <button onclick="checkLipBalm('薄荷')">薄荷</button>
+            <button onclick="checkLipBalm('乳香')">乳香</button>
+        </div>
+
+        <div id="info-box">
+            點擊上方按鈕，小天使會告訴你精油功效
+        </div>
+
+        <div class="scripture-section">
+            <h3 style="color: #606c38;">🌿 上帝要祝福你的話</h3>
+            <div class="scripture-display">
+                <div id="text" class="placeholder">請點擊下方按鈕抽恩典</div>
+                <div id="ref" class="reference-text"></div>
+            </div>
+            <button class="draw-btn" onclick="drawScripture()">馬上抽取今日恩典</button>
+        </div>
+    </div>
+
+    <footer style="margin-top: 30px; color: #bbb; font-size: 12px; text-align: center; width: 100%; padding-bottom: 20px;">
+        <p>© 2026板城靈糧堂出品</p>
+    </footer>
+
+    <script>
+        /* --- 精油查詢邏輯 --- */
+        function checkLipBalm(type) {
+            const box = document.getElementById('info-box');
+            const allButtons = document.querySelectorAll('.btn-group button');
+            allButtons.forEach(btn => btn.classList.remove('active'));
+            allButtons.forEach(btn => {
+                if (btn.innerText === type) {
+                    btn.classList.add('active');
+                }
+            });
+
+            box.style.whiteSpace = "pre-line";
+
+            if (type === '薰衣草') {
+                box.innerText = "薰衣草 (Lavender)｜舒緩與安撫\n精油界的「萬用修復師」。能有效鎮定受損肌膚，緩解乾裂帶來的不適感。淡雅草本香氣能放鬆神經，是壓力大或睡前使用的首選。";
+                box.style.color = "#6a4c93";
+            } else if (type === '天竺葵') {
+                box.innerText = "天竺葵 (Geranium)｜平衡與光澤\n具有優異的修復能力，能平衡肌膚油脂與水分。\n玫瑰般的優雅花香，能幫助平衡情緒，提振身心。";
+                box.style.color = "#bf5858";
+            } else if (type === '甜橙') {
+                box.innerText = "甜橙 (Sweet Orange)｜亮澤與愉悅\n含有維生素C，有助於提亮暗沉的唇色。\n清新甜美的柑橘香氣如同陽光般燦爛，能瞬間驅散憂鬱。";
+                box.style.color = "#f3722c";
+            } else if (type === '薄荷') {
+                box.innerText = "薄荷 (Peppermint)｜清爽與提神\n塗抹時帶來微微清涼感，能舒緩發燙或腫脹的雙唇。\n強大的穿透力香氣能幫助清醒頭腦。";
+                box.style.color = "#62952e";
+            } else if (type === '乳香') {
+                box.innerText = "乳香 (Frankincense)｜深度修護與凍齡\n具有卓越的抗老特性，能撫平細紋、深度滋養。\n沉穩的木質香氣能平定心神，帶來沉靜的力量。";
+                box.style.color = "#a27c4d";
+            }
+        }
+
+        /* --- 經文抽取邏輯 --- */
+        const scriptures = [
+            "我也與你同在，你無論往那裏去，我必保佑你，領你歸回這地，總不離棄 你。（創世記 廿八：15）",
+            "耶和華是有憐憫，有恩典的上帝，不輕易發怒，並有豐盛的慈愛。（出埃及記 卅四：6）",
+            "你當剛強壯膽，不要懼怕，也不要驚惶，因為你無論往那裏去，耶和華你 的上帝必與你同在。（約書亞記 一：9）",
+            "至於我，和我家，我們必定事奉耶和華。（約書亞記 廿四：15）",
+            "耶和華不像人看人，人是看外貌，耶和華是看內心。（撒母耳記上 十六：7）",
+            "你們不要憂愁，因靠耶和華而得的喜樂是你們的力量。（尼希米記 八：10）",
+            "我從前風聞有你，現在親眼看見你。（約伯記 四十二：5）",
+            "你趁著年幼，衰敗的日子尚未來到…當記念造你的主。（傳道書十二：1）",
+            "敬畏上帝，謹守他的誡命，這是人所當盡的本分。因為人所作的事，連一切隱藏的事，無論是善是惡，上帝都必審問。 （傳道書 十二：13~14）",
+            "我又聽見主的聲音，說，我可以差遣誰呢，誰肯為我們去呢，我說，我在 這裏，請差遣我。（以賽亞書 六：8）",
+            "曠野和乾旱之地，必然歡喜，沙漠也必快樂，又像玫瑰開花。必開花繁盛 樂上加樂，而且歡呼…人必看見耶和華的榮耀，我們上帝的華美。（以賽亞書 卅五：1~2）",
+            "那等候耶和華的，必從新得力，他們必如鷹展翅上騰，他們奔跑卻不困倦， 行走卻不疲乏。（以賽亞書 四十：31）",
+            "你不要害怕，因為我與你同在，不要驚惶，因為我是你的上帝，我必堅固 你，我必幫助你，我必用我公義的右手扶持你。（以賽亞書 四十一：10）",
+            "壓傷的蘆葦，他不折斷，將殘的燈火，他不吹滅。（以賽亞書 四十二：3）",
+            "當趁耶和華可尋找的時候尋找他，相近的時候求告他。（以賽亞書 五十五：6）",
+            "耶和華說，我的意念，非同你們的意念，我的道路，非同你們的道路。（以賽亞書 五十五：8）",
+            "倚靠耶和華，以耶和華為可靠的，那人有福了。他必像樹栽於水旁，在河 邊扎根，炎熱來到，並不懼怕，葉子仍必青翠，在乾旱之年毫無掛慮，而且結果不止。（耶利米書 十七：7~8）",
+            "凡等候耶和華，心裏尋求他的，耶和華必施恩給他。（耶利米哀歌 三：25）",
+            "所以你當歸向你的上帝，謹守仁愛、公平、常常等候你的上帝。（何西阿書 十二：6）",
+            "惟願公平如大水滾滾，使公義如江河滔滔。 （阿摩司書 五：24）",
+            "世人哪，耶和華已指示你何為善，他向你所要的是甚麼呢？只要你行公義， 好憐憫，存謙卑的心，與你的上帝同行。（彌迦書 六：8）",
+            "萬軍之耶和華說，你們要將當納的十分之一，全然送入倉庫，使我家有糧， 以此試試我，是否為你們敞開天上的窗戶，傾福與你們，甚至無處可容。（瑪拉基書 三：10）",
+            "敬畏耶和華是知識的開端。（箴言 一：7）",
+            "你要專心仰賴耶和華，不可倚靠自己的聰明。（箴言 三：5）",
+            "你要保守你的心，勝過保守一切，因為一生的果效是由心發出。（箴言 四：23）",
+            "手懶的，要受貧窮，手勤的，卻要富足。（箴言 十：4）",
+            "婦女美貌而無見識，如同金環帶在豬鼻上。（箴言 十一：22）",
+            "說謊言的嘴，為耶和華所憎惡，行事誠實的，為他所喜悅。 （箴言 一二：22）",
+            "耶和華的眼目，無處不在，惡人善人，他都鑒察。（箴言 一五：3）",
+            "少有財寶，敬畏耶和華，強如多有財寶，煩亂不安。喫素菜，彼此相愛 強如喫肥牛，彼此相恨。 （箴言 一五：16~17）",
+            "喜樂的心，乃是良藥，憂傷的靈，使骨枯乾。（箴言 一七：22）",
+            "敗壞之先，人心驕傲，尊榮以前，必有謙卑。（箴言 一八：12）",
+            "遠離分爭，是人的尊榮，愚妄人都愛爭鬧。 （箴言 廿：3）",
+            "教養孩童，使他走當行的道，就是到老他也不偏離。（箴言 廿二：6）",
+            "一句話說得合宜，就如金蘋果在銀網子裏。（箴言 廿五：11）",
+            "好氣的人，挑啟爭端，暴怒的人，多多犯罪。（箴言 廿九：22）",
+            "豔麗是虛假的，美容是虛浮的，惟敬畏耶和華的婦女，必得稱讚。（箴言 卅一：30）",
+            "耶和華是我的產業，是我杯中的分，我所得的你為我持守。用繩量給我的 地界，坐落在佳美之處，我的產業實在美好。（詩篇 十六：5~6）",
+            "我要為你的慈愛高興歡喜，因為你見過我的困苦，知道我心中的艱難。 （詩篇 卅一：7）",
+            "上帝是我們的避難所，是我們的力量，是我們在患難中隨時的幫助。（詩篇 四十六：1）",
+            "上帝所要的祭，就是憂傷的靈，上帝阿，憂傷痛悔的心，你必不輕看。（詩篇 五十一：17）",
+            "你要把你的重擔卸給耶和華，他必撫養你，他永不叫義人動搖。（詩篇 五十五：22）",
+            "求你指教我們怎樣數算自己的日子，好叫我們得著智慧的心。（詩篇 九十：12）",
+            "耶和華要保護你，免受一切的災害，他要保護你的性命。你出你入，耶和 華要保護你，從今時直到永遠。（詩篇 一二一：7~8）",
+            "流淚撒種的，必歡呼收割。那帶種流淚出去的，必要歡歡樂樂的帶禾捆回來。（詩篇 一二六：5~6）",
+            "上帝愛世人，甚至將他的獨生子賜給他們，叫一切信他的，不至滅亡，反得永生。（約翰福音 三：16）",
+            "人活著，不是單靠食物，乃是靠上帝口裏所出的一切話。 （馬太福音 四：4）",
+            "人若因我辱罵你們，逼迫你們，捏造各樣壞話毀謗你們，你們就有福了。 應當歡喜快樂，因為你們在天上的賞賜是大的，在你們以前的先知，人也是這樣逼迫他們。（馬太福音 五：11~12）",
+            "耶穌說，我告訴你們，要愛你們的仇敵，為那逼迫你們的禱告。（馬太福音 五：44）",
+            "你們不要論斷人，免得你們被論斷。因為你們怎樣論斷人，也必怎樣被論 斷。（馬太福音 七：1~2）",
+            "你們要靈巧像蛇，馴良像鴿子。（馬太福音 十：16）",
+            "惟有忍耐到底的，必然得救。（馬太福音 十：22）",
+            "掩蓋的事，沒有不露出來的，隱藏的事，沒有不被人知道的。（馬太福音 十：26）",
+            "凡勞苦擔重擔的人，可以到我這裏來，我就使你們得安息。（馬太福音 十一：28）",
+            "耶穌說，凡一國自相分爭，就成為荒場，一城一家自相分爭，必站立不住。（馬太福音 十二：25）",
+            "人若賺得全世界，賠上自己的生命，有甚麼益處呢，人還能拿甚麼換生命呢？ （馬太福音 十六：26）",
+            "耶穌說，在人這是不能的，在上帝凡事都能。（馬太福音 十九：26）",
+            "人子來，不是要受人的服事，乃是要服事人。（馬太福音 廿：28）",
+            "你要盡心、盡性、盡意、愛主你的上帝。這是誡命中的第一，且是最大的。 其次也相倣，就是要愛人如己。這兩條誡命，是律法和先知一切道理的總 綱。（馬太福音 廿二：37~40）",
+            "你們中間誰為大，誰就要作你們的用人。凡自高的必降為卑，自卑的必升 為高。（馬太福音 廿三：11~12）",
+            "你們祈求就給你們，尋找就尋見，叩門就給你們開門。（路加福音 十一：9）",
+            "你們要謹慎自守，免去一切的貪心，因為人的生命，不在乎家道豐富。（路加福音 十二：15）",
+            "你們必曉得真理，真理必叫你們得以自由。 恁欲識真理，亦真理欲互恁自由。 （約翰福音 八：32）",
+            "耶穌說，復活在我，生命也在我，信我的人，雖然死了，也必復活，凡活 著信我的人，必永遠不死。 （約翰福音 十一：25~26）",
+            "我賜給你們一條新命令，乃是叫你們彼此相愛，我怎樣愛你們，你們也要 怎樣相愛.（約翰福音 十三：34~35）",
+            "耶穌說，我就是道路、真理、生命，若不藉著我，沒有人能到父那裏去。（約翰福音 十四：6）",
+            "我留下平安給你們，我將我的平安賜給你們，我所賜的，不像世人所賜的， 你們心裏不要憂愁，也不要膽怯。（約翰福音 十四：27）",
+            "當信主耶穌，你和你一家都必得救。（使徒行傳 十六：31）",
+            "施比受更有福。（使徒行傳 廿：35）",
+            "就是在患難中，也是歡歡喜喜的，因為知道患難生忍耐，忍耐生老練，老 練生盼望，盼望不至於羞恥。（羅馬書 五：3~4）",
+            "罪的工價乃是死，惟有上帝的恩賜，在我們的主基督耶穌裏，乃是永生。（羅馬書 六：23）",
+            "我們曉得萬事都互相效力，叫愛上帝的人得益處，就是按他旨意被召的人。（羅馬書 八：28）",
+            "上帝若幫助我們，誰能敵擋我們呢？（羅馬書 八：31）",
+            "不要效法這個世界，只要心意更新而變化，叫你們察驗何為上帝的善良， 純全可喜悅的旨意。（羅馬書 十二：2）",
+            "在指望中要喜樂，在患難中要忍耐，禱告要恆切。（羅馬書 十二：12）",
+            "不要自己伸冤，寧可讓步…因為經上記著：主說，伸冤在我，我必報應。（羅馬書 十二：19）",
+            "我們若活著，是為主而活，若死了，是為主而死，所以我們或活或死，總 是主的人。（羅馬書 十四：8）",
+            "凡事我都可行，但不都有益處。凡事我都可行，但無論那一件，我總不受 他的轄制。（哥林多前書 六：12）",
+            "凡事都可行，但不都有益處。凡事都可行，但不都造就人。（哥林多前書 十：23）",
+            "無論作甚麼，都要為榮耀上帝而行。（哥林多前書 十：31）",
+            "你們務要堅固不可搖動，常常竭力多作主工，因為知道你們的勞苦，在主裏面不是徒然的。（哥林多前書 十五：58）",
+            "我們四面受敵，卻不被困住，心裏作難，卻不至失望。（哥林多後書 四：8）",
+            "我們不喪膽，外體雖然毀壞，內心卻一天新似一天。（哥林多後書 四：16）",
+            "若有人在基督裏，他就是新造的人，舊事已過，都變成新的了。（哥林多後書 五：17）",
+            "少種的少收，多種的多收，這話是真的。各人要隨本心所酌定的，不要作 難，不要勉強。因為捐得樂意的人，是上帝所喜愛的。（哥林多後書 九：6~7）",
+            "弟兄們，若有人偶然被過犯所勝，你們屬靈的人，就當用溫柔的心，把他 挽回過來，又當自己小心，恐怕也被引誘。（加拉太書 六：1）",
+            "生氣卻不要犯罪，不可含怒到日落。（以弗所書 四：26）",
+            "我不是以為自己已經得著了，我只有一件事，就是忘記背後努力面前的， 向著標竿直跑，要得上帝在基督耶穌裏從上面召我來得的獎賞。（腓立比書 三：13~14）",
+            "應當一無罣慮，只要凡事藉著禱告，祈求，和感謝，將你們所要的告訴 上帝。上帝所賜出人意外的平安，必在基督耶穌裏，保守你們的心懷意念。（腓立比書 四：6~7）",
+            "無論作甚麼，都要從心裏作，像是給主作的，不是給人作的。（歌羅西書 三：23）",
+            "不是要討人喜歡，乃是要討那察驗我們心的上帝喜歡。（帖撒羅尼迦前書 二：4）",
+            "要常常喜樂，不住的禱告，凡事謝恩，因為這是上帝在基督耶穌裏向你們 所定的旨意。（帖撒羅尼迦前書 五：16~18）",
+            "不可叫人小看你年輕，總要在言語、行為、愛心、信心，清潔上，都作信 徒的榜樣。（提摩太前書 四：12）",
+            "聖經都是上帝所默示的、於教訓、督責、使人歸正、教導人學義，都是有 益的，叫屬上帝的人得以完全，豫備行各樣的善事。（提摩太後書 三：16~17）",
+            "那美好的仗我已經打過了，當跑的路我已經跑盡了，所信的道我已經守住 了。（提摩太後書 四：7）",
+            "我們若將起初確實的信心，堅持到底，就在基督裏有分了。（希伯來書 三：14）",
+            "要彼此相顧，激發愛心，勉勵行善。（希伯來書 十：24）",
+            "你們不可停止聚會，好像那些停止慣了的人，倒要彼此勸勉，既知道那日 子臨近，就更當如此。（希伯來書 十：25）",
+            "信就是所望之事的實底，是未見之事的確據。（希伯來書 十一：1）",
+            "你們要行道，不要單單聽道，自己欺哄自己，因為聽道而不行道的，就像 人對著鏡子看自己本來的面目，看見，走後，隨即忘了他的相貌如何。（雅各書 一：22~24）"
+        ];
+
+        function drawScripture() {
+            const textElement = document.getElementById('text');
+            const refElement = document.getElementById('ref');
+            
+            const randomIndex = Math.floor(Math.random() * scriptures.length);
+            const fullText = scriptures[randomIndex];
+            
+            // 使用正則表達式分離內容與括號內的出處
+            const match = fullText.match(/(.+)[（(](.+)[）)]/);
+            
+            if (match) {
+                textElement.innerText = match[1].trim();
+                refElement.innerText = `— ${match[2].trim()} —`;
+                textElement.className = "content-text";
+            } else {
+                textElement.innerText = fullText;
+                refElement.innerText = "";
+                textElement.className = "content-text";
+            }
+        }
+    </script>
+
+</body>
+</html>
